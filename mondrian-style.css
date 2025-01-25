@@ -1,158 +1,157 @@
+/* Center the canvas */
 #canvas {
-  width: 700px;
-  height: 700px;
-  margin: 0 auto;
-  box-shadow: 25px 25px 20px 10px #f0d9bf;
-  background-color: #e8e0e0;
-  -webkit-box-shadow: 25px 25px 20px 10px #f0d9bf;
-}
-#first-row {
-  height: 75%;
-  width: 100%;
-}
-#big-rectangle {
-  height: 100%;
-  width: 75%;
-}
-.red {
-  background-color: hsla(0, 63%, 44%, 1);
-  background-image: -webkit-linear-gradient(
-    270deg,
-    rgba(134, 43, 45, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: -moz-linear-gradient(
-    270deg,
-    rgba(134, 43, 45, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: -o-linear-gradient(
-    270deg,
-    rgba(134, 43, 45, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: linear-gradient(
-    180deg,
-    rgba(134, 43, 45, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
+	width: 700px;
+	height: 700px;
+	margin: 0 auto;
+	box-shadow: 25px 25px 20px 10px #f0d9bf;
+	background-color: #e8e0e0;
+	-webkit-box-shadow: 25px 25px 20px 10px #f0d9bf;
+	transition: transform 3s ease; /* Slow down the rotation (3 seconds) */
+	clear: both; /* Clear any floating elements inside the canvas */
 }
 
+/* First row */
+#first-row {
+	height: 75%;
+	width: 100%;
+	clear: both; /* Clear floats within this row */
+}
+
+/* Big rectangle in the first row */
+#big-rectangle {
+	height: 100%;
+	width: 75%;
+}
+
+/* Red color style */
+.red {
+	background-color: hsla(0, 63%, 44%, 1);
+	background-image: linear-gradient(
+		180deg,
+		rgba(134, 43, 45, 1) 0%,
+		rgba(255, 0, 0, 1) 100%
+	);
+}
+
+/* Black divider */
 #first-divider {
-  height: 100%;
-  width: 3%;
+	height: 100%;
+	width: 3%;
+	background-color: black;
 }
-.black {
-  background-color: black;
-}
+
+/* Right float class for placing elements to the right */
 .right {
-  float: right;
+	float: right;
 }
+
+/* First column */
 #first-column {
-  height: 100%;
-  width: 22%;
+	height: 100%;
+	width: 22%;
 }
+
+/* Second divider (horizontal line) */
 #second-divider {
-  height: 3%;
-  width: 100%;
+	height: 3%;
+	width: 100%;
+	background-color: black;
 }
-#first-medium-rectangle {
-  height: 48.5%;
-  width: 100%;
-}
+
+/* Medium rectangles */
+#first-medium-rectangle,
 #second-medium-rectangle {
-  height: 48.5%;
-  width: 100%;
+	height: 48.5%;
+	width: 100%;
 }
+
+/* Second row */
 #second-row {
-  height: 3%;
-  width: 100%;
+	height: 3%;
+	width: 100%;
+	background-color: black;
 }
+
+/* Third row */
 #third-row {
-  height: 22%;
-  width: 100%;
+	height: 22%;
+	width: 100%;
+	clear: both; /* Clear any floating elements */
 }
+
+/* Last column in the third row */
 #last-column {
-  height: 100%;
-  width: 5%;
+	height: 100%;
+	width: 5%;
 }
+
+/* Third divider */
 #third-divider {
-  height: 10%;
-  width: 100%;
+	height: 10%;
+	width: 100%;
+	background-color: black;
 }
-#first-tiny-rectangle {
-  height: 45%;
-  width: 100%;
-}
+
+/* Tiny rectangles in the last column */
+#first-tiny-rectangle,
 #second-tiny-rectangle {
-  height: 45%;
-  width: 100%;
+	height: 45%;
+	width: 100%;
 }
+
+/* Yellow color style */
 .yellow {
-  background-color: hsla(60, 83%, 45%, 1);
-  background-image: -webkit-linear-gradient(
-    270deg,
-    rgba(129, 232, 10, 1) 0%,
-    rgba(149, 194, 8, 1) 27.98%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: -moz-linear-gradient(
-    270deg,
-    rgba(129, 232, 10, 1) 0%,
-    rgba(149, 194, 8, 1) 27.98%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: -o-linear-gradient(
-    270deg,
-    rgba(129, 232, 10, 1) 0%,
-    rgba(149, 194, 8, 1) 27.98%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background-image: linear-gradient(
-    180deg,
-    rgba(129, 232, 10, 1) 0%,
-    rgba(149, 194, 8, 1) 27.98%,
-    rgba(255, 0, 0, 1) 100%
-  );
+	background-color: hsla(60, 83%, 45%, 1);
+	background-image: linear-gradient(
+		180deg,
+		rgba(129, 232, 10, 1) 0%,
+		rgba(255, 0, 0, 1) 100%
+	);
 }
+
+/* Fourth divider */
 #fourth-divider {
-  height: 100%;
-  width: 3%;
+	height: 100%;
+	width: 3%;
+	background-color: black;
 }
+
+/* Wide rectangle */
 #wide-rectangle {
-  height: 100%;
-  width: 67%;
+	height: 100%;
+	width: 67%;
 }
+
+/* Fifth divider */
 #fifth-divider {
-  height: 100%;
-  width: 3%;
+	height: 100%;
+	width: 3%;
+	background-color: black;
 }
+
+/* Small red rectangle in the third row */
 #small-rectangle {
-  height: 100%;
-  width: 22%;
+	height: 100%;
+	width: 22%;
+	background-color: hsla(0, 63%, 44%, 1);
+	background-image: linear-gradient(
+		180deg,
+		rgba(134, 43, 45, 1) 0%,
+		rgba(255, 0, 0, 1) 100%
+	);
 }
+
+/* Blue color style for the blue rectangle */
 .blue {
-  background-color: hsla(240, 50%, 49%, 1);
-  -webkit-box-shadow: 0px 0px 0px;
-  box-shadow: 0px 0px 0px;
-  background-image: -webkit-linear-gradient(
-    270deg,
-    rgba(20, 23, 171, 1) 0%,
-    rgba(45, 112, 150, 1) 100%
-  );
-  background-image: -moz-linear-gradient(
-    270deg,
-    rgba(20, 23, 171, 1) 0%,
-    rgba(45, 112, 150, 1) 100%
-  );
-  background-image: -o-linear-gradient(
-    270deg,
-    rgba(20, 23, 171, 1) 0%,
-    rgba(45, 112, 150, 1) 100%
-  );
-  background-image: linear-gradient(
-    180deg,
-    rgba(20, 23, 171, 1) 0%,
-    rgba(45, 112, 150, 1) 100%
-  );
+	background-color: hsla(240, 50%, 49%, 1);
+	background-image: linear-gradient(
+		180deg,
+		rgba(20, 23, 171, 1) 0%,
+		rgba(45, 112, 150, 1) 100%
+	);
+}
+
+/* When hovering over the canvas, apply rotation */
+#canvas:hover {
+	transform: rotate(360deg); /* Rotate the canvas 360 degrees */
 }
